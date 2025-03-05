@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default function Popup() {
-  return <div>Hello World</div>
+  return <div className="w-[200px]">Hello World</div>
 }

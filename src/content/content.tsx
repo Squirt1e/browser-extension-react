@@ -1,7 +1,7 @@
-import './styles.css'
+import '../styles.css'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import Content from './content/index'
+import Content from './index'
 
 const ROOT_ID = 'extension-content-root'
 const container = document.createElement('div')
