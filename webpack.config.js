@@ -7,7 +7,7 @@ module.exports = {
   entry: {
     popup: './src/popup/popup.tsx',
     content: './src/content/content.tsx',
-    background: './src/background/background.ts'
+    background: './src/background/background.ts',
   },
   devtool: 'source-map',
   mode: 'development',
@@ -30,6 +30,17 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/, // 包括 react-dom/client
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
   },
   devServer: {
     static: {
