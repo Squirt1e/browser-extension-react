@@ -1,9 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "吃米看大图",
+  "name": "Create Browser Extension",
   "version": "1.0",
-  "description": "一切需要登录才能查看大图的设计都是耍流氓！看个大图而已，吃你家大米了?!",
+  "description": "Develop a browser extension using React, with seamless DOM manipulation capabilities.",
   "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

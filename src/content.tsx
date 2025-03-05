@@ -3,7 +3,7 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import Content from './content/index'
 
-const ROOT_ID = 'extension-root'
+const ROOT_ID = 'extension-content-root'
 const container = document.createElement('div')
 container.id = ROOT_ID
 document.body.appendChild(container)
