@@ -4,6 +4,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
+  watchOptions: {
+    ignored: ['!src/**/*'], // 忽略不必要的文件
+    aggregateTimeout: 300, // 延迟构建时间
+    poll: 1000, // 每秒检查文件更改
+  },
   entry: {
     popup: './src/popup/popup.tsx',
     content: './src/content/content.tsx',
