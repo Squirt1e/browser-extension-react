@@ -24,6 +24,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off', // 如果你使用 React 17+，可以关闭这个规则
     '@typescript-eslint/explicit-module-boundary-types': 'off', // 如果你不想强制要求函数返回值类型
     'no-unused-vars': 'off',
+    '@typescript-eslint/no-require-imports': 'off',
     '@typescript-eslint/no-unused-vars': [
       'warn',
       {
